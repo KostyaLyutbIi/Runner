@@ -1,0 +1,9 @@
+using UnityEngine;
+
+public class Block : MonoBehaviour
+{
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Game Over");
+    }
+}

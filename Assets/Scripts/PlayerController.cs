@@ -1,18 +1,16 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
+
 
 public class PlayerController : MonoBehaviour
 {
-    public float ForwardSpeed;
+    public float Speed;
     public Rigidbody Rigidbody;
 
-    void Start()
-    {
-        Rigidbody = GetComponent<Rigidbody>();
-    }
+    public event OnSwipeInput SwipeEvent;
+    public delegate void OnSwipeInput(Vector3 direction);
 
     private void FixedUpdate()
     {
-        Rigidbody.velocity = new Vector3(-ForwardSpeed, 0, 0);
+        Rigidbody.velocity = new Vector3(-Speed, 0, 0);
     }
 }
