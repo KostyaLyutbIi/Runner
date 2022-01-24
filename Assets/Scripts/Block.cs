@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
+    public PlayerController Player;
+
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Game Over");
+        Player.Die();
     }
 }
