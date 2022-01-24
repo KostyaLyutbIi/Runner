@@ -16,11 +16,15 @@ public class PlayerController : MonoBehaviour
         Rigidbody.velocity = new Vector3(-MoveSpeed, 0, 0);
 
         if (Input.GetKey(KeyCode.A))
+        {
             Transform.Translate(Vector3.left * Sensitivity * Time.deltaTime);
-
+        }
 
         if (Input.GetKey(KeyCode.D))
+        {
             Transform.Translate(-Vector3.left * Sensitivity * Time.deltaTime);
+        }
+            
     }
 
     public void Die()
