@@ -7,4 +7,14 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void FirstLevel()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
