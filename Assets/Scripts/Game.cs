@@ -5,6 +5,7 @@ using System.Collections;
 public class Game : MonoBehaviour
 {
     public PlayerController Controls;
+    public Track LevelControls;
 
     public GameObject Text;
 
@@ -31,6 +32,7 @@ public class Game : MonoBehaviour
 
         CurrentState = State.Loss;
         Controls.enabled = false;
+        LevelControls.enabled = false;
     }
 
     public void OnPlayerReachedFinish()
