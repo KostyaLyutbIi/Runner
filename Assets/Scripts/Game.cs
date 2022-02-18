@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Game : MonoBehaviour
 {
@@ -31,7 +31,6 @@ public class Game : MonoBehaviour
 
         CurrentState = State.Loss;
         Controls.enabled = false;
-        Debug.Log("Game Over");
     }
 
     public void OnPlayerReachedFinish()
@@ -40,7 +39,6 @@ public class Game : MonoBehaviour
 
         CurrentState = State.Won;
         Controls.enabled = false;
-        Debug.Log("You Won!");
     }
 
     public void UpdatePoints()
