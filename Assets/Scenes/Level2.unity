@@ -2502,6 +2502,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: {fileID: 1530904313}
   Speed: 3
+  Point: {fileID: 730254140}
+  Game: {fileID: 277217595}
 --- !u!1 &1541807297
 GameObject:
   m_ObjectHideFlags: 0
