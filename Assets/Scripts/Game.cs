@@ -1,11 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class Game : MonoBehaviour
 {
     public PlayerController Controls;
-    public Track LevelControls;
+    public LevelControll LevelControls;
 
     public GameObject Text;
 
@@ -41,6 +40,7 @@ public class Game : MonoBehaviour
 
         CurrentState = State.Won;
         Controls.enabled = false;
+        LevelControls.enabled = false;
     }
 
     public void UpdatePoints()
